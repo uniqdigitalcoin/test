@@ -565,17 +565,17 @@ definitions:
   UserPINValidationRequest:
     title: UserPINValidationRequest
     example:
-      user_id: 966dce87-01ff-439d-b641-1653364f2f2b
-      pin: '2580'
+      user_id: 410ec778-b1b1-4a3f-86c2-92389c5f25c6
+      pin_2fa: '1111'
     type: object
     properties:
       user_id:
         type: string
-      pin:
+      pin_2fa:
         type: string
     required:
     - user_id
-    - pin
+    - pin_2fa
   GenerateUserOTPRequest:
     title: GenerateUserOTPRequest
     example:
