@@ -34,7 +34,7 @@ paths:
         default:
           description: ''
           headers: {}
-  /user/6f6559c1-12b9-4879-9c36-955a4128f1fe:
+  /user/410ec778-b1b1-4a3f-86c2-92389c5f25c6:
     get:
       summary: User Profile
       tags:
