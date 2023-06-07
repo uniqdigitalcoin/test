@@ -565,17 +565,17 @@ definitions:
   UserPINValidationRequest:
     title: UserPINValidationRequest
     example:
-      user_id: 966dce87-01ff-439d-b641-1653364f2f2b
-      pin: '2580'
+      user_id: 410ec778-b1b1-4a3f-86c2-92389c5f25c6
+      pin_2fa: '1111'
     type: object
     properties:
       user_id:
         type: string
-      pin:
+      pin_2fa:
         type: string
     required:
     - user_id
-    - pin
+    - pin_2fa
   GenerateUserOTPRequest:
     title: GenerateUserOTPRequest
     example:
@@ -642,7 +642,7 @@ definitions:
     example:
       status: 200
       message: Encryption Successful
-      encrypted: gRUHpMU/cCbXcG+Zwi5nCeiAA7gv4KUyCk4GMKDsWj/Kb/7JTExeMWhxYdyow4887ahnvYw3+G8zvl7jiog2AUTd62qOG0y7wridDJDGYg4v89bwbBrP/h5E+ZbU6z4g
+      encrypted: gRUHpMU/cCbXcG+Zwi5nCUMNTgc2V/97gKcQJwmy18CN2SFnt5FcHFDa7+4d1rKFrq2dwruxvLk+qM6HI8wCMKuMyEAN7W8ffouetEo5AnElckjpXlE0+P6FY0MWRxMe2qSiEMGNr7nYUb1WgYPXqjPZzKweyAtqkpVmaFl72UWW21IfiGMnKCf3P1LQI4pGblAjTL8T5HBOi+MQma49u+q6juj2xmNtRfEJhoB5y3/j/RH8eeaE/UuScXhVbZAjpr9trILLpUQcrWkKhyzFLje6wdr2z+48JrovV4iiX+k=
     type: object
     properties:
       status:
