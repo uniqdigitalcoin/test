@@ -585,34 +585,13 @@ definitions:
   EncryptRequest:
     title: EncryptRequest
     example:
-      data:
-        user_id: d93853c4-b874-4722-a994-6b6eb52acfec
-        card_number: 3522-xxxx-xxxx-2561
-        token: 57ed308f
+      data: {}
     type: object
     properties:
       data:
-        $ref: '#/definitions/Data'
+        type: object
     required:
     - data
-  Data:
-    title: Data
-    example:
-      user_id: d93853c4-b874-4722-a994-6b6eb52acfec
-      card_number: 3522-xxxx-xxxx-2561
-      token: 57ed308f
-    type: object
-    properties:
-      user_id:
-        type: string
-      card_number:
-        type: string
-      token:
-        type: string
-    required:
-    - user_id
-    - card_number
-    - token
   DecryptRequest:
     title: DecryptRequest
     example:
