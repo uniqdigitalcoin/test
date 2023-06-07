@@ -275,10 +275,10 @@ paths:
           headers: {}
   /user-2fa-validate/966dce87-01ff-439d-b641-1653364f2f2b/2580:
     get:
-      summary: User PIN Validation
+      summary: User PIN Validation (Deprecated)
       tags:
       - Misc
-      operationId: UserPINValidation
+      operationId: UserPINValidation(Deprecated)
       deprecated: false
       produces:
       - application/json
@@ -291,7 +291,7 @@ paths:
       summary: User PIN Validation
       tags:
       - Misc
-      operationId: PostUserPINValidation
+      operationId: UserPINValidation
       deprecated: false
       produces:
       - application/json
