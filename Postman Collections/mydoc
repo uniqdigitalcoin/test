@@ -585,22 +585,42 @@ definitions:
   EncryptRequest:
     title: EncryptRequest
     example:
-      data: {}
+      data:
+        message: Lannisters Send their regards
     type: object
     properties:
       data:
-        type: object
+        $ref: '#/definitions/Data'
     required:
     - data
+  Data:
+    title: Data
+    example:
+      message: Lannisters Send their regards
+    type: object
+    properties:
+      message:
+        type: string
+    required:
+    - message
   DecryptRequest:
     title: DecryptRequest
     example:
-      encrypted: btxQHahQ+pO4pdKvBtpBYF9fNg0R4ZCn06dvOOFV7JYcE2Y7pCXL+evpgNrOF7ulfJyuOTzb0WPeRpK2wGAeOYIKn87Q/xg4E7hPW5UOeBmy3RUkh5BlYp1knCLG4LIy+V/O9DAJgwB023kWcS4KjL6xNp4AA/9HEyu1u/sXc+M/iiTKeYe/QQsRs4Pl6s+TbHgejRA2eMwn72e6DdmrI8YxlOTngG0qsrLENQV2IWOp/SbNXXWoBUCBMNpFvvtfmQU8SB9AzS/HV4NGyATA2BGVSsbCydoDOAKLjcMJ8o++bHO3pI0qMaKXEFQGFyW+10A6ptOABvg72ur8zA1Hs8654LT26yudzZSze3Do62IuZ9BDA+x0gptPVFQToaSAyVqfiT7MNfFus7Hy0QwscXqJYAqGBj253V5tNPbmHTa84aqvAZ0Qnx1gO2a++TeDyN+zZANFZAcwkIwnGICizwA4IyspNWR5ftQhvhE015KSATFeLFeMpkkbk91F/HVMFcwvz75dlVS64l2qVSbrdp0jTjcmRFLJOXVFcpF038YurwTFh3kUhsq4yTNmEa2v6Y4jRzVbtsg1LlFalcq3XL4UtaVCgcXWHN5tPyOHM1y/zSI6jzg1bCy3nP0EtjMpZ8vivYDg5dLklEIKq/HyblaIKwFhLz7j8eYk/7wl7Bc=
+      status: 200
+      message: Encryption Successful
+      encrypted: gRUHpMU/cCbXcG+Zwi5nCeiAA7gv4KUyCk4GMKDsWj/Kb/7JTExeMWhxYdyow4887ahnvYw3+G8zvl7jiog2AUTd62qOG0y7wridDJDGYg4v89bwbBrP/h5E+ZbU6z4g
     type: object
     properties:
+      status:
+        type: integer
+        format: int32
+      message:
+        type: string
       encrypted:
         type: string
     required:
+    - status
+    - message
     - encrypted
 tags:
 - name: Misc
