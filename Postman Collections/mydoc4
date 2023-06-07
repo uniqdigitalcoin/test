@@ -620,7 +620,8 @@ definitions:
     title: EncryptRequest
     example:
       data:
-        message: Lannisters Send their regards
+        user_id: 410ec778-b1b1-4a3f-86c2-92389c5f25c6
+        pin_2fa: '1234'
     type: object
     properties:
       data:
@@ -630,13 +631,17 @@ definitions:
   Data:
     title: Data
     example:
-      message: Lannisters Send their regards
+      user_id: 410ec778-b1b1-4a3f-86c2-92389c5f25c6
+      pin_2fa: '1234'
     type: object
     properties:
-      message:
+      user_id:
+        type: string
+      pin_2fa:
         type: string
     required:
-    - message
+    - user_id
+    - pin_2fa
   DecryptRequest:
     title: DecryptRequest
     example:
