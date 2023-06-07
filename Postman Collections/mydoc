@@ -287,6 +287,25 @@ paths:
         '200':
           description: ''
           headers: {}
+    post:
+      summary: User PIN Validation
+      tags:
+      - Misc
+      operationId: PostUserPINValidation
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/UserPINValidationRequest'
+      responses:
+        '200':
+          description: ''
+          headers: {}
   /generate-otp:
     post:
       summary: Generate User OTP
@@ -542,6 +561,20 @@ definitions:
     - priority
     - transaction_id
     - mobile_number
+  UserPINValidationRequest:
+    title: UserPINValidationRequest
+    example:
+      user_id: 966dce87-01ff-439d-b641-1653364f2f2b
+      pin: '2580'
+    type: object
+    properties:
+      user_id:
+        type: string
+      pin:
+        type: string
+    required:
+    - user_id
+    - pin
   GenerateUserOTPRequest:
     title: GenerateUserOTPRequest
     example:
