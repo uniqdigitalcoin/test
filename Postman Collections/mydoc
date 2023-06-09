@@ -647,7 +647,7 @@ definitions:
     example:
       status: 200
       message: Encryption Successful
-      encrypted: gRUHpMU/cCbXcG+Zwi5nCY+LubkJ1U6tKHefp1sZWElPGJY7giC6HMAyJZRjB1GDbzvZ1kFBBjAGPRzp9ZDWPTBqFIGj7DpMGOPC8qx7FPgWXW7N6CvTxG6OMyDAc3WW
+      encrypted: gRUHpMU/cCbXcG+Zwi5nCb44cX/Vf9I9FyPc57yIxevCOGdgpNhLlPvc2/oaTinH6cnihPE0TQENArEnSusIUPAeNtJgjRyHBPj28bpP7n853xMtR3leDrAeodmvDZDU1Fn4WE3GlLhJ25Lzq0jp4NqbwDDoPSWSBfL3SwJyPuZpVnd0E45v0i5/6E6YmSkvduoWL5XH3ZIitSCGrP0zJGeM+BTiT44O99vwgjUkS4sQ9Vsv3IulbSx5K8A19RdnHAm+jwoVoCHL5AKs4aXW6A==
     type: object
     properties:
       status:
