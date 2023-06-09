@@ -347,7 +347,7 @@ paths:
         default:
           description: ''
           headers: {}
-  /user-status/d084ba59-2520-4077-b8f5-e65337df56f9:
+  /user-status/ef73f65e-ad95-4905-8dda-3c6a18254145:
     get:
       summary: Get User Status
       tags:
