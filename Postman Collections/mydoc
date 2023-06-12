@@ -5,7 +5,11 @@ info:
   contact: {}
 host: example.com
 basePath: /
-securityDefinitions: {}
+securityDefinitions:
+  apiKey:
+    type: apiKey
+    name: x-api-key
+    in: header
 schemes:
 - http
 consumes:
@@ -661,6 +665,8 @@ definitions:
     - status
     - message
     - encrypted
+security:
+- apiKey: []
 tags:
 - name: Misc
   description: ''
