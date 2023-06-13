@@ -19,7 +19,12 @@ produces:
 paths:
   /register:
     post:
-      description: "StartFragment\n\n| <br><br>Type<br><br> | <br><br>Params<br><br> | <br><br>Values<br><br> | <br><br>Required<br><br> | <br><br>Description<br><br> |\n| <br><br>HEAD<br><br> | <br><br>api_key<br><br> | <br><br>string<br><br> | <br><br>Yes<br><br> | <br><br>API access key token for authentication<br><br> |\n| <br><br>POST<br><br> | <br><br>country_code<br><br> | <br><br>string<br><br> | <br><br>Yes<br><br> | <br><br>User Country Code<br><br> |\n| <br><br>POST<br><br> | <br><br>mobile_number<br><br> | <br><br>numeric<br><br> | <br><br>Yes<br><br> | <br><br>A mobile number that the user will enter <br><br>  <br><br><br> |\n| <br><br>POST<br><br> | <br><br>ip_address<br><br> | <br><br>string<br><br> | <br><br>Yes<br><br> |   <br> |\n\n  \n\nEndFragment"
+      description: >-
+        | **Type** | **Params** | **Value** | **Required** |
+
+        | --- | --- | --- | --- |
+
+        | POST | country_code | string | YES |
       summary: User Registration
       tags:
       - Misc
